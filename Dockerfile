@@ -2,7 +2,7 @@ FROM pytorch/pytorch:nightly-devel-cuda10.0-cudnn7
 
 RUN apt-get update -y
 
-ADD . /app
+ADD ./nvidia-apex /app
 
 RUN pip install -r /app/requirements.txt
 
